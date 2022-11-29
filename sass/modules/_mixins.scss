@@ -1,0 +1,23 @@
+@use "./function" as *;
+
+@mixin transitionEase {
+    transition: all 0.3s ease-in-out;
+}
+
+// @include imagefit(px(545));
+@mixin imagefit($height) {
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+}
+
+@mixin sudo-dash {
+    position: absolute;
+    background: #00adb9;
+    content: "";
+    display: inline-block;
+    width: px(20);
+    height: px(3);
+    top: px(10);
+    left: px(-25);
+}

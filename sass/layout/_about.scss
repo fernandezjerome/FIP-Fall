@@ -1,0 +1,136 @@
+@use "../modules" as *;
+
+.about {
+    padding: 0;
+    @include breakpoint(tablet) {
+        padding: px(25);
+    }
+    h2 {
+        font-size: px(50);
+        line-height: px(50);
+    }
+    span {
+        color: $colour-main;
+    }
+    background: linear-gradient(
+        270deg,
+        rgba(92, 86, 212, 1) 0%,
+        rgba(105, 50, 173, 1) 100%
+    );
+
+    &__height {
+        // height: 400px;
+        @include breakpoint(tablet) {
+            height: 400px;
+        }
+    }
+    &__grid {
+        border-radius: 0;
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-inline: auto;
+        justify-items: normal;
+        align-items: start;
+        width: min(100%, px(1100));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: white;
+        // background-image: url("../images/profile-bg.svg");
+        background-position: center center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px,
+            rgba(0, 0, 0, 0.1) 0px 0px 1px;
+
+        // height: 1000px;
+        @include breakpoint(tablet) {
+            border-radius: px(30);
+            height: px(800);
+            background-image: url("../images/profile-bg.svg");
+        }
+    }
+    &__2ndgrid {
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-inline: auto;
+        justify-items: normal;
+        align-items: start;
+        width: min(100% - px(40), px(1000));
+        grid-template-columns: repeat(1, 1fr);
+
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__mainCopy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+            font-weight: bold;
+            color: $colour-main;
+            font-size: px(30);
+            margin-top: px(10);
+            @include breakpoint(tablet) {
+                margin-top: px(100);
+            }
+        }
+        a {
+            margin-top: px(20);
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        img {
+            height: 350px;
+        }
+    }
+    &__skills {
+        display: none;
+        // display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include breakpoint(tablet) {
+            display: flex;
+        }
+        p {
+            font-size: px(16);
+            margin-top: px(130);
+            font-weight: bold;
+            color: $colour-main;
+        }
+        h2 {
+            font-size: px(40);
+        }
+    }
+    &__download {
+        button {
+            margin-bottom: px(20);
+        }
+    }
+
+    &__json {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+            font-size: px(15);
+        }
+        button {
+            margin-top: px(20);
+        }
+        h3 {
+            margin-top: px(80);
+            font-size: px(14);
+            font-weight: bolder;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: center;
+        gap: px(10);
+    }
+}
