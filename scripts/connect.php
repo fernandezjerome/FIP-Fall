@@ -10,7 +10,7 @@
     $pass = "root"; // For MAMP
     $url = "localhost";
     // Change the database name for each site
-    $db = "db_marvel";
+    $db = "db_portfolio";
 
     // Connect to db
     // $link = mysqli_connect($url, $user, $pass, $db, "8888"); //Mac
