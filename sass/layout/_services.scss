@@ -47,8 +47,8 @@
         }
     }
     &__box:hover {
-        box-shadow: rgba(152, 68, 248, 0.095) 0px 10px 20px,
-            rgba(0, 0, 0, 0.1) 0px 0px 1px;
+        box-shadow: rgba(90, 84, 97, 0.095) 0px 10px 20px,
+            rgba(56, 50, 50, 0.1) 0px 0px 1px;
         @include transitionEase;
         h3 {
             color: $colour-main;

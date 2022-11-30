@@ -50,17 +50,15 @@
 }
 
 .sql-btn {
-    font-size: px(12);
-    color: white !important;
+    font-size: px(13);
+    color: $colour-darkest !important;
     font-weight: weight(bold);
     cursor: pointer;
     border: 0;
-    background-color: $colour-accent;
-    padding: px(5) px(10);
-    border-radius: px(5);
+    background-color: rgb(238, 238, 238);
+    padding: px(5) px(12);
+    // border-radius: px(5);
     transition: background-color 0.5s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.095) 0px 10px 20px,
-        rgba(0, 0, 0, 0.1) 0px 0px 1px;
     @include transitionEase;
 }
 .sql-btn:hover {
@@ -88,7 +86,7 @@
 
     text-align: center;
     p {
-        color: $colour-main;
+        color: $colour-darkest;
         font-weight: 600;
     }
     h2 {

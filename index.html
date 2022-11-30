@@ -2,50 +2,309 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Marvel Characters Team Page</title>
+        <title>Jerome Fernandez Portfolio</title>
+        <script
+            src="https://kit.fontawesome.com/62e3d456b9.js"
+            crossorigin="anonymous"
+        ></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Serif:wght@400;700&display=swap"
             rel="stylesheet"
         />
 
         <link rel="stylesheet" href="css/main.css" />
     </head>
-
     <body>
-        <header>
-            <h1 class="hidden">All About the Team</h1>
-            <!-- <img id="main-logo" src="images/logo.svg" alt="avengers logo" /> -->
-        </header>
-
-        <main id="app">
-            <nav id="character-nav">
-                <ul class="characters">
-                    <!-- prof thumb component goes here -->
-                </ul>
+        <header class="header head-colour">
+            <nav id="sidenav">
+                <a href="#">About Me</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact Me</a>
             </nav>
 
-            <article>
-                <h3>Choose Your Hero!</h3>
-                <p>
-                    Use your mouse to hover / click to discover more about each
-                    Marvel character
-                </p>
-            </article>
+            <nav class="header__nav">
+                <!-- grid 1 logo icon-->
+                <div class="header__logo">
+                    <img src="images/jerome-logo.svg" alt="housecom logo" />
+                </div>
+                <!-- grid 2 -->
+                <a id="btnHamburger" href="#" class="header__burger">
+                    <span></span>
+                    <!-- for easier to click on menu -->
+                    <div></div>
+                </a>
+                <!-- grid 3 -->
+                <li class="header__links">
+                    <a href="#">About Me</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contact Me </a>
+                </li>
+                <!-- grid 4 -->
+                <a href="#" class="header__btn btn">Social</a>
+                <i class="fa-solid fa-paper-plane header__qoute"></i>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="hidden">Jerome Fernandez Portfolio</h1>
+
+            <section class="about">
+                <div class="about__grid">
+                    <div class="about__2ndgrid">
+                        <!-- grid1 -->
+                        <div class="about__height about__mainCopy">
+                            <div>
+                                <p>Let's make</p>
+                                <h2>Amazing product for your business</h2>
+                                <!-- <a class="btn" href="#page2">Lets Talk</a> -->
+                            </div>
+                            <div class="about__height about__json">
+                                <div>
+                                    <div class="about__menu intro__buttons">
+                                        <button
+                                            data-name="first"
+                                            class="sql-btn"
+                                        >
+                                            About
+                                        </button>
+                                        <button
+                                            data-name="second"
+                                            class="sql-btn"
+                                        >
+                                            Education
+                                        </button>
+                                        <button
+                                            data-name="third"
+                                            class="sql-btn"
+                                        >
+                                            Skills
+                                        </button>
+                                        <button
+                                            data-name="fourth"
+                                            class="sql-btn"
+                                        >
+                                            Experience
+                                        </button>
+                                    </div>
+                                    <div class="sql__content">
+                                        <h4>Intro om myself</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Iste,
+                                            illo! Voluptatibus vel ut distinctio
+                                            dolore eum maxime quam fuga
+                                            repellat!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grid2 -->
+                        <div class="about__height about__profile">
+                            <div>
+                                <img src="images/main-image.png" alt="" />
+                            </div>
+                            <div class="about__height about__skills sql__img">
+                                <img src="images/animation1.svg" alt="games" />
+                            </div>
+                        </div>
+                        <!-- grid3 -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="headline bgcl1">
+                <p>Services</p>
+                <h2>My Awesome Services</h2>
+            </section>
+
+            <section class="services">
+                <div class="services__container">
+                    <div class="services__box">
+                        <img
+                            src="images/services-web.svg"
+                            alt="web development"
+                        />
+                        <h3>Web Development</h3>
+                        <p>
+                            Landing Pages, User Flow, Wireframing, Prototyping,
+                            Mobile App Design, Web App
+                        </p>
+                    </div>
+                    <div class="services__box">
+                        <img
+                            src="images/services-uxui.svg"
+                            alt="UI/UX Design"
+                        />
+                        <h3>UI/UX Design</h3>
+                        <p>
+                            HTML/CSS, JavaScript, Animation, Responsive Website
+                        </p>
+                    </div>
+                    <div class="services__box">
+                        <img src="images/services-branding.svg" alt="" />
+                        <h3>Braning Design</h3>
+                        <p>
+                            Brochures, Calling Cards, Magazines, Web Posting,
+                            Billboards, Logo Design, Video Editing
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="headline bgcl2">
+                <p>Demo</p>
+                <h2>Demo Real</h2>
+            </section>
+
+            <div>
+                <section class="playVid" id="page2">
+                    <div id="video" class="video-control">
+                        <video src="videos/demo.mp4" controls></video>
+                    </div>
+
+                    <div id="controls">
+                        <div id="play">
+                            <img src="images/video-play.svg" alt="play icon" />
+                        </div>
+                        <div id="pause">
+                            <img
+                                src="images/video-pause.svg"
+                                alt="pause icon"
+                            />
+                        </div>
+                        <div id="restart">
+                            <img
+                                src="images/video-reset.svg"
+                                alt="reset icon"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="images/video-volume.svg"
+                                alt="volume icon"
+                            />
+                        </div>
+
+                        <div id="volumeControl">
+                            <input
+                                type="range"
+                                min="0"
+                                max="100"
+                                value="50"
+                                id="volumeSlider"
+                            />
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="app">
+                <section>
+                    <nav id="character-nav">
+                        <ul class="characters">
+                            <!-- hero thumb component goes here -->
+                            <theherothumb
+                                @loadlbdata="loadLightbox"
+                                v-for="hero in heroData"
+                                :hero="hero"
+                            ></theherothumb>
+                        </ul>
+                    </nav>
+
+                    <article>
+                        <h3>Choose Your Hero!</h3>
+                        <p>
+                            Use your mouse to hover / click to discover more
+                            about each Marvel character
+                        </p>
+                    </article>
+
+                    <!-- custom lightbox component goes here -->
+                    <thelightbox
+                        @closelightbox="this.showLB=false"
+                        v-if="showLB"
+                        :item="lbData"
+                    ></thelightbox>
+                    <!-- end lightbox -->
+                </section>
+
+                <section>
+                    <form
+                        class="container__form"
+                        action="scripts/send.php"
+                        method="POST"
+                    >
+                        <label for="firstname">First Name</label>
+                        <input
+                            v-model.trim="firstname"
+                            v-on:keypress="fname($event)"
+                            ref="firstname"
+                            type="text"
+                            id="firstname"
+                            name="firstname"
+                            required="required"
+                        />
+
+                        <label for="lastname">Last Name</label>
+                        <input
+                            v-model.trim="lastname"
+                            v-on:keypress="lname($event)"
+                            ref="lastname"
+                            type="text"
+                            id="lastname"
+                            name="lastname"
+                            required
+                        />
+
+                        <label for="email">Email</label>
+                        <input
+                            v-model.trim="email"
+                            ref="email"
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        />
+
+                        <label for="message">Your Message</label>
+                        <textarea
+                            v-model.trim="msg"
+                            v-on:keypress="message($event)"
+                            ref="message"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+
+                        <div>
+                            <div class="wrapper">
+                                <input
+                                    @click.prevent="processMail"
+                                    type="submit"
+                                    class="submit"
+                                    value="Go!"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                    <div id="responseContainer">
+                        <h3 id="php-copy"></h3>
+                    </div>
+                </section>
+            </div>
         </main>
-        <!-- make this a sticky footer so it's always at the bottom-->
-        <footer>
-            <h3>All Images &copy; Marvel</h3>
-        </footer>
-
-        <!-- lightbox component goes here -->
-
-        <!-- end lightbox component -->
-
-        <!-- load script tags at the bottom -->
+        <script src="js/sql.js"></script>
+        <script src="js/video.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/main.js" type="module" defer></script>
     </body>

@@ -17,7 +17,7 @@
 }
 
 .head-colour {
-    background-color: $colour-whitegray;
+    background-color: $colour-light1;
     border-bottom: 1px solid $colour-headerline;
 }
 // main grid
@@ -96,6 +96,7 @@
             &::before {
                 // @include before;
                 content: "";
+                color: $colour-gray;
                 display: block;
                 position: absolute;
                 width: 40px;
@@ -108,7 +109,7 @@
                 opacity: 0;
             }
             &:hover {
-                color: $colour-main;
+                color: $colour-darkest;
                 &::before {
                     opacity: 1;
                 }
@@ -131,7 +132,7 @@
         color: $colour1;
         cursor: pointer;
         &:hover {
-            color: $colour2;
+            color: $colour-darkest;
             @include transitionEase;
         }
 

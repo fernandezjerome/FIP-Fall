@@ -12,48 +12,22 @@
     span {
         color: $colour-main;
     }
-    background: linear-gradient(
-        270deg,
-        rgba(92, 86, 212, 1) 0%,
-        rgba(105, 50, 173, 1) 100%
-    );
 
     &__height {
         // height: 400px;
         @include breakpoint(tablet) {
-            height: 400px;
+            // height: 400px;
         }
     }
-    &__grid {
-        border-radius: 0;
-        display: grid;
-        grid-template-rows: auto auto;
-        margin-inline: auto;
-        justify-items: normal;
-        align-items: start;
-        width: min(100%, px(1100));
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: white;
-        // background-image: url("../images/profile-bg.svg");
-        background-position: center center;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px,
-            rgba(0, 0, 0, 0.1) 0px 0px 1px;
 
-        // height: 1000px;
-        @include breakpoint(tablet) {
-            border-radius: px(30);
-            height: px(800);
-            background-image: url("../images/profile-bg.svg");
-        }
-    }
     &__2ndgrid {
         display: grid;
         grid-template-rows: auto auto;
         margin-inline: auto;
         justify-items: normal;
         align-items: start;
-        width: min(100% - px(40), px(1000));
+        gap: px(20);
+        width: min(100% - px(40), px(1140));
         grid-template-columns: repeat(1, 1fr);
 
         @include breakpoint(tablet) {
@@ -66,12 +40,19 @@
         flex-direction: column;
         align-items: flex-start;
         p {
-            font-weight: bold;
-            color: $colour-main;
-            font-size: px(30);
-            margin-top: px(10);
+            font-weight: 400;
+            color: $colour-darkest;
+            font-size: px(27);
+            margin-top: px(20);
             @include breakpoint(tablet) {
-                margin-top: px(100);
+                font-size: px(30);
+            }
+        }
+        h2 {
+            font-weight: 800;
+            font-size: px(45);
+            @include breakpoint(tablet) {
+                font-size: px(50);
             }
         }
         a {
@@ -79,6 +60,7 @@
         }
     }
     &__profile {
+        position: relative;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -87,22 +69,10 @@
         }
     }
     &__skills {
-        display: none;
-        // display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include breakpoint(tablet) {
-            display: flex;
-        }
-        p {
-            font-size: px(16);
-            margin-top: px(130);
-            font-weight: bold;
-            color: $colour-main;
-        }
-        h2 {
-            font-size: px(40);
-        }
+        position: absolute;
+        $anim-drt: 2.9s;
+        $anim-ease: cubic-bezier(0.6, 0.05, 0.15, 0.95);
+        animation: bouncing $anim-drt alternate infinite $anim-ease;
     }
     &__download {
         button {
@@ -110,7 +80,19 @@
         }
     }
 
+    @keyframes bouncing {
+        0% {
+            transform: translate3d(0, 10px, 0) scale(0.9, 1);
+        }
+
+        100% {
+            transform: translate3d(0, 50px, 0) scale(0.9, 1);
+        }
+    }
+
     &__json {
+        margin-top: px(30);
+        border-top: 1px solid $colour-darkest;
         display: flex;
         gap: 0;
         flex-direction: column;
@@ -120,7 +102,7 @@
             font-size: px(15);
         }
         button {
-            margin-top: px(20);
+            // margin-top: px(20);
         }
         h3 {
             margin-top: px(80);
@@ -132,5 +114,8 @@
         display: flex;
         justify-content: center;
         gap: px(10);
+        @include breakpoint(tablet) {
+            justify-content: flex-start;
+        }
     }
 }

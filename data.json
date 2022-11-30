@@ -1,62 +1,26 @@
 {
-    "project_01": {
-        "name": "Project one",
-        "id": "1",
-        "info": "info of project 1",
-        "thumb": "thumb_01.jpg",
-        "image": "image_01.jpg",
-        "date": "12.27.2019",
-        "category": "Branding",
-        "client": "Canon"
+    "first": {
+        "img": "animation1.svg",
+        "alt": "about me",
+        "product_name": "My Introduction",
+        "product_desc": "Control the temperature of your home from your device from anywhere in the world! Stay on top of your home/s well-being, even while you/re away, by being alerted to events like sudden temperature drops or spikes that could cause damage to your home. Create a schedule. Control from anywhere from a smartphone, tablet or Apple Watch."
     },
-    "project_02": {
-        "name": "Project Two",
-        "id": "2",
-        "info": "info of project 2",
-        "thumb": "thumb_02.jpg",
-        "image": "image_02.jpg",
-        "date": "12.27.2019",
-        "category": "Branding",
-        "client": "Canon"
+    "second": {
+        "img": "animation2.svg",
+        "alt": "about education",
+        "product_name": "May Education",
+        "product_desc": "Leave your worries at the door. Greet visitors from your handheld device, whether you're home or not."
     },
-    "project_03": {
-        "name": "Project three",
-        "id": "3",
-        "info": "info of project 3",
-        "thumb": "thumb_03.jpg",
-        "image": "image_03.jpg",
-        "date": "12.27.2019",
-        "category": "Branding",
-        "client": "Canon"
+    "third": {
+        "img": "animation3.svg",
+        "alt": "about skills",
+        "product_name": "My Weapon Choice",
+        "product_desc": "With the ThermoSecurity lock installed on your doors, you will be able to wirelessly lock and unlock your doors from your wireless devices, without the need for a key."
     },
-    "project_04": {
-        "name": "Project Four",
-        "id": "4",
-        "info": "info of project 4",
-        "thumb": "thumb_04.jpg",
-        "image": "image_04.jpg",
-        "date": "12.27.2019",
-        "category": "Branding",
-        "client": "Canon"
-    },
-    "project_05": {
-        "name": "Project five",
-        "id": "5",
-        "info": "info of project 5",
-        "thumb": "thumb_05.jpg",
-        "image": "image_05.jpg",
-        "date": "12.27.2019",
-        "category": "Branding",
-        "client": "Canon"
-    },
-    "project_06": {
-        "name": "Project six",
-        "id": "6",
-        "info": "info of project 6",
-        "thumb": "thumb_01.jpg",
-        "image": "image_01.jpg",
-        "date": "12.27.2019",
-        "category": "Branding",
-        "client": "Canon"
+    "fourth": {
+        "img": "animation4.svg",
+        "alt": "about experience",
+        "product_name": "My Emplyment History",
+        "product_desc": "Tells you where danger is. Tells you your CO levels. Alerts you if there is danger."
     }
 }

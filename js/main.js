@@ -1,19 +1,37 @@
+import HeroThumb from "./components/TheHeroThumbnail.js";
+import LightBox from "./components/TheLightbox.js";
+const phpResponse = document.getElementById("php-copy");
 (() => {
-    // create vue instance here
     const { createApp } = Vue;
 
     createApp({
         created() {
-            fetch("./data.json")
+            // ALWAYS get your remote data here
+            fetch("./scripts/json.php")
                 .then((res) => res.json())
-                .then((data) => (this.portfolioData = data))
+                .then((data) => (this.heroData = data))
                 .catch((error) => console.error(error));
         },
 
         data() {
             return {
-                portfolioData: {},
+                heroData: {},
+                lbData: {},
+                showLB: false,
             };
+        },
+
+        components: {
+            theherothumb: HeroThumb,
+            thelightbox: LightBox,
+        },
+
+        //processMail
+        methods: {
+            loadLightbox(hero) {
+                this.lbData = hero;
+                this.showLB = true;
+            },
         },
     }).mount("#app");
 })();
