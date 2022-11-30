@@ -160,58 +160,32 @@
                 </div>
             </section>
 
-            <section class="headline bgcl2">
-                <p>Demo</p>
-                <h2>Demo Real</h2>
+             <section>
+                <li class="porfolio">
+                    <div>
+                        <div><img src="images/thumb_01.jpg" alt="" /></div>
+                        <div class="portfolio__copy">
+                            <h3>Underwater</h3>
+                            <p>Caterory</p>
+                        </div>
+                    </div>
+                </li>
             </section>
 
-            <div>
-                <section class="playVid" id="page2">
-                    <div id="video" class="video-control">
-                        <video src="videos/demo.mp4" controls></video>
-                    </div>
 
-                    <div id="controls">
-                        <div id="play">
-                            <img src="images/video-play.svg" alt="play icon" />
-                        </div>
-                        <div id="pause">
-                            <img
-                                src="images/video-pause.svg"
-                                alt="pause icon"
-                            />
-                        </div>
-                        <div id="restart">
-                            <img
-                                src="images/video-reset.svg"
-                                alt="reset icon"
-                            />
-                        </div>
-                        <div>
-                            <img
-                                src="images/video-volume.svg"
-                                alt="volume icon"
-                            />
-                        </div>
 
-                        <div id="volumeControl">
-                            <input
-                                type="range"
-                                min="0"
-                                max="100"
-                                value="50"
-                                id="volumeSlider"
-                            />
-                        </div>
-                    </div>
-                </section>
-            </div>
+            
+            </div><div>
 
             <div id="app">
+                <section class="headline bgcl2">
+                    <p>Portfolio</p>
+                    <h2>My Previous Works</h2>
+                </section>
+
                 <section>
                     <nav id="character-nav">
-                        <ul class="characters">
-                            <!-- hero thumb component goes here -->
+                        <ul class="porfolio">
                             <theherothumb
                                 @loadlbdata="loadLightbox"
                                 v-for="hero in heroData"
@@ -220,26 +194,15 @@
                         </ul>
                     </nav>
 
-                    <article>
-                        <h3>Choose Your Hero!</h3>
-                        <p>
-                            Use your mouse to hover / click to discover more
-                            about each Marvel character
-                        </p>
-                    </article>
-
-                    <!-- custom lightbox component goes here -->
                     <thelightbox
                         @closelightbox="this.showLB=false"
                         v-if="showLB"
                         :item="lbData"
                     ></thelightbox>
-                    <!-- end lightbox -->
                 </section>
             </div>
         </main>
         <script src="js/sql.js"></script>
-        <script src="js/video.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/main.js" type="module" defer></script>
     </body>

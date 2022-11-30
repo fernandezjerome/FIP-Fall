@@ -1,0 +1,28 @@
+@use "../modules" as *;
+
+.porfolio {
+    img {
+        @include imagefit(px(300));
+    }
+    ul {
+        list-style-type: none;
+    }
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-inline: auto;
+    justify-items: normal;
+    align-items: start;
+    gap: px(20);
+    width: min(100% - px(40), px(1140));
+    grid-template-columns: repeat(1, 1fr);
+
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__copy {
+        background-color: black;
+    }
+}

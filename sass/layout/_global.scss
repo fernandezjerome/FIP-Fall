@@ -6,7 +6,20 @@
 
 .btn {
     font-size: px(12);
-    color: white !important;
+    color: $colour-darkest !important;
+    font-weight: weight(bold);
+    cursor: pointer;
+    border: 0;
+    background-color: $colour-footerfont;
+    padding: px(10) px(34);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
+.btn-selected {
+    font-size: px(12);
+    color: $colour-darkest !important;
     font-weight: weight(bold);
     cursor: pointer;
     border: 0;

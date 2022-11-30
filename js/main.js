@@ -18,6 +18,8 @@ const phpResponse = document.getElementById("php-copy");
                 heroData: {},
                 lbData: {},
                 showLB: false,
+                title: "Title of book",
+                showBooks: true,
             };
         },
 
@@ -31,6 +33,9 @@ const phpResponse = document.getElementById("php-copy");
             loadLightbox(hero) {
                 this.lbData = hero;
                 this.showLB = true;
+            },
+            toggleShow() {
+                this.showBooks = !this.showBooks;
             },
         },
     }).mount("#app");
