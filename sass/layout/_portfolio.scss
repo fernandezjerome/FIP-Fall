@@ -1,10 +1,18 @@
 @use "../modules" as *;
 
 .portfolio {
+    overflow: hidden;
+
     cursor: pointer;
     img {
         // transition: transform 0.5s cubic-bezier(0.7, -0.39, 0.31, 1.38);
         @include imagefit(px(300));
+        @include breakpoint(tablet) {
+            @include imagefit(px(180));
+        }
+        @include breakpoint(desktop) {
+            @include imagefit(px(200));
+        }
     }
     ul {
         list-style-type: none;
@@ -19,17 +27,17 @@
     gap: px(20);
     width: min(100% - px(40), px(1140));
     grid-template-columns: repeat(1, 1fr);
-    :hover {
+    img:hover {
         @include transitionEase;
 
         transform: scale(1.03);
     }
 
     @include breakpoint(tablet) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     @include breakpoint(desktop) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     &__container {
         position: relative;
@@ -37,20 +45,17 @@
 
     &__copy {
         // opacity: 0;
-        padding: px(10) px(30);
-        bottom: px(20);
-        background-color: $colour-darkest;
+        padding: px(5) px(30);
+        bottom: 0;
+        background-color: $colour-main;
         position: absolute;
         h3 {
             font-size: px(16);
-            color: $colour-lightgray;
+            color: $colour-darkest;
         }
         p {
-            color: $colour-darkgray;
+            color: $colour-darkest;
             font-size: px(14);
-        }
-        &__container {
-            overflow: hidden;
         }
     }
     // &__copy:hover {
