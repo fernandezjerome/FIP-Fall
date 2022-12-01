@@ -11,10 +11,14 @@
         display: grid;
         margin-inline: auto;
         align-items: center;
-        grid-template-columns: 0.2fr 2fr 0.2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         justify-items: center;
         width: min(100%, px(1140));
+    }
+
+    &__logo {
+        width: px(40);
     }
 
     &__social {
@@ -23,38 +27,32 @@
         font-size: 20px;
         i {
             @include transitionEase;
-            color: $colour-gray;
+            color: $colour-accent;
         }
         i:hover {
             @include transitionEase;
-            color: $colour-accent;
+            color: $colour-gray;
         }
     }
     &__links {
+        display: flex;
+        flex-direction: column;
+        gap: px(5);
+        @include breakpoint(tablet) {
+            grid-area: px(20);
+            flex-direction: row;
+        }
         a {
-            color: rgb(228, 228, 228);
-            position: relative;
-
-            @include transitionEase;
-
+            font-size: px(14);
+            color: rgb(175, 175, 175);
             &:not(:last-child) {
                 margin-right: px(20);
             }
-            &::before {
-                // @include before;
-                content: "";
-                color: $colour-gray;
-                display: block;
-                position: absolute;
-                width: 40px;
-                height: px(3);
-                left: 0;
-                right: 0;
-                bottom: px(-10);
-                background: $colour-accent;
-                @include transitionEase;
-                opacity: 0;
-            }
+        }
+        a:hover {
+            @include transitionEase;
+
+            color: rgb(95, 95, 95);
         }
     }
 }

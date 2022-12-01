@@ -32,8 +32,7 @@
         width: min(100%, px(1140));
         // width: min(100% - px(20), px(1000));
         padding: px(24);
-        @include breakpoint(tablet) {
-        }
+
         @include breakpoint(desktop) {
             grid-template-columns: 0.5fr 2fr 0.5fr;
         }
