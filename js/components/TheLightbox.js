@@ -8,14 +8,13 @@ export default {
     template: `
     <section class="lightbox">
         <!-- just to validate data - remove when working -->
-        <pre>{{item}}</pre>
         <!-- end data validation -->
 
         <img @click="closeLB" src="images/closeIcon.png" class="lightbox_close">
         <!-- hero image on the left, text on the right -->
         <!-- her image is a background image -->
         <article>
-            <h3> {{item.client}}</h3>
+            <h3 class="lb_heading">Captain America - the First Avenger</h3>
             <p class="lb_text">
                Fugsy sit amet consectetur, adipisicing elit. Nostrum autem pariatur dicta eum dolorum nulla neque laborum praesentium quo possimus, mollitia, dolor omnis rerum dolorem ratione in natus? Nihil, mollitia!
             </p>

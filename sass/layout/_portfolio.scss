@@ -1,12 +1,16 @@
 @use "../modules" as *;
 
-.porfolio {
+.portfolio {
+    cursor: pointer;
     img {
+        // transition: transform 0.5s cubic-bezier(0.7, -0.39, 0.31, 1.38);
         @include imagefit(px(300));
     }
     ul {
         list-style-type: none;
     }
+    @include transitionEase;
+
     display: grid;
     grid-template-rows: auto auto;
     margin-inline: auto;
@@ -15,6 +19,11 @@
     gap: px(20);
     width: min(100% - px(40), px(1140));
     grid-template-columns: repeat(1, 1fr);
+    :hover {
+        @include transitionEase;
+
+        transform: scale(1.03);
+    }
 
     @include breakpoint(tablet) {
         grid-template-columns: repeat(2, 1fr);
@@ -22,7 +31,29 @@
     @include breakpoint(desktop) {
         grid-template-columns: repeat(3, 1fr);
     }
-    &__copy {
-        background-color: black;
+    &__container {
+        position: relative;
     }
+
+    &__copy {
+        // opacity: 0;
+        padding: px(10) px(30);
+        bottom: px(20);
+        background-color: $colour-darkest;
+        position: absolute;
+        h3 {
+            font-size: px(16);
+            color: $colour-lightgray;
+        }
+        p {
+            color: $colour-darkgray;
+            font-size: px(14);
+        }
+        &__container {
+            overflow: hidden;
+        }
+    }
+    // &__copy:hover {
+    //     opacity: 1;
+    // }
 }

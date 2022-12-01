@@ -10,9 +10,9 @@ export default {
     template: `
 
 
-    <li @click="loadLBData" >
-        <img :src='"images/" + hero.thumb' alt="hero img">
-        <div>
+    <li @click="loadLBData" class='portfolio__container'>
+        <img :src='"images/" + hero.thumb' v-bind:alt="hero.name">
+        <div class="portfolio__copy">
             <h3>{{hero.name}}</h3>
             <p>{{hero.category}}</p>
         </div>
