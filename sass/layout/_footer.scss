@@ -1,7 +1,60 @@
 @use "../modules" as *;
 
-footer {
-    margin-top: px(50);
-    background-color: black;
-    height: 100px;
+.footer {
+    padding: px(10) 0;
+    li {
+        list-style: none;
+    }
+    margin-top: 100px;
+    background-color: $colour-darkest;
+    &__nav {
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 0.2fr 2fr 0.2fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+    }
+
+    &__social {
+        display: flex;
+        gap: px(10);
+        font-size: 20px;
+        i {
+            @include transitionEase;
+            color: $colour-gray;
+        }
+        i:hover {
+            @include transitionEase;
+            color: $colour-accent;
+        }
+    }
+    &__links {
+        a {
+            color: rgb(228, 228, 228);
+            position: relative;
+
+            @include transitionEase;
+
+            &:not(:last-child) {
+                margin-right: px(20);
+            }
+            &::before {
+                // @include before;
+                content: "";
+                color: $colour-gray;
+                display: block;
+                position: absolute;
+                width: 40px;
+                height: px(3);
+                left: 0;
+                right: 0;
+                bottom: px(-10);
+                background: $colour-accent;
+                @include transitionEase;
+                opacity: 0;
+            }
+        }
+    }
 }

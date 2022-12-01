@@ -31,7 +31,7 @@
             <nav class="header__nav">
                 <!-- grid 1 logo icon-->
                 <div class="header__logo">
-                    <img src="images/jerome-logo.svg" alt="housecom logo" />
+                    <img src="images/jf-logo.svg" alt="jerome logo" />
                 </div>
                 <!-- grid 2 -->
                 <a id="btnHamburger" href="#" class="header__burger">
@@ -47,14 +47,18 @@
                     <a href="#">Contact Me </a>
                 </li>
                 <!-- grid 4 -->
-                <a href="#" class="header__btn btn">Social</a>
-                <i class="fa-solid fa-paper-plane header__qoute"></i>
+                <div class="header__social">
+                    <!-- <h3>sdlkfjlsadkj</h3> -->
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-square-behance"></i>
+                </div>
             </nav>
         </header>
 
         <main>
             <h1 class="hidden">Jerome Fernandez Portfolio</h1>
-
+            <!-- about -->
             <section class="about">
                 <div class="about__grid">
                     <div class="about__2ndgrid">
@@ -126,6 +130,7 @@
                 <h2>My Awesome Services</h2>
             </section>
 
+            <!-- Services -->
             <section class="services">
                 <div class="services__container">
                     <div class="services__box">
@@ -159,20 +164,46 @@
                     </div>
                 </div>
             </section>
-            <div></div>
 
-            <!-- <section>
-                <li class="porfolio">
-                    <div>
-                        <div><img src="images/thumb_01.jpg" alt="" /></div>
-                        <div class="portfolio__copy">
-                            <h3>Underwater</h3>
-                            <p>Caterory</p>
-                        </div>
+            <!-- Demo -->
+            <section class="headline bgcl1">
+                <p>Services</p>
+                <h2>My Awesome Services</h2>
+            </section>
+
+            <!-- video -->
+            <section class="playVid" id="page2">
+                <div id="video" class="video-control">
+                    <video src="videos/house.mp4" controls></video>
+                </div>
+
+                <div id="controls">
+                    <div id="play">
+                        <img src="images/video-play.svg" alt="play icon" />
                     </div>
-                </li>
-            </section> -->
+                    <div id="pause">
+                        <img src="images/video-pause.svg" alt="pause icon" />
+                    </div>
+                    <div id="restart">
+                        <img src="images/video-reset.svg" alt="reset icon" />
+                    </div>
+                    <div>
+                        <img src="images/video-volume.svg" alt="volume icon" />
+                    </div>
 
+                    <div id="volumeControl">
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            value="50"
+                            id="volumeSlider"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
             <div id="app">
                 <section class="headline bgcl2">
                     <p>Portfolio</p>
@@ -198,9 +229,33 @@
                 </section>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer">
+                <nav class="footer__nav">
+                    <!-- grid 1 logo icon-->
+                    <div class="header__logo">
+                        <img src="images/jf-logo.svg" alt="jerome logo" />
+                    </div>
+
+                    <!-- grid 2 -->
+                    <li class="footer__links">
+                        <a href="#">About Me</a>
+                        <a href="#">Services</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Contact Me </a>
+                    </li>
+                    <!-- grid  -->
+                    <div class="footer__social">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-square-behance"></i>
+                    </div>
+                </nav>
+            </div>
+        </footer>
         <script src="js/sql.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/main.js" type="module" defer></script>
     </body>
+    <footer></footer>
 </html>
