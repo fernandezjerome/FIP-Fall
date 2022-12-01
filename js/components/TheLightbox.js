@@ -7,21 +7,24 @@ export default {
 
     template: `
     <section class="lightbox">
-        <!-- just to validate data - remove when working -->
-        <!-- end data validation -->
-
-        <img @click="closeLB" src="images/closeIcon.png" class="lightbox_close">
-        <!-- hero image on the left, text on the right -->
-        <!-- her image is a background image -->
-        <article>
-            <h3 class="lb_heading">Captain America - the First Avenger</h3>
-            <p class="lb_text">
-               Fugsy sit amet consectetur, adipisicing elit. Nostrum autem pariatur dicta eum dolorum nulla neque laborum praesentium quo possimus, mollitia, dolor omnis rerum dolorem ratione in natus? Nihil, mollitia!
-            </p>
-            <p class="lb_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat totam, unde quam aspernatur quasi delectus sed earum nobis voluptate voluptas suscipit repudiandae explicabo placeat numquam error. Praesentium, quisquam illum.
-            </p>
-        </article>
+ 
+       <div class="content">
+            <img @click="closeLB" src="images/closeIcon.png" class="lightbox_close">
+    
+            <article class="content__copy">
+                <h3>{{item.name}}</h3>
+                    <p>{{item.info}}</p>
+                    <h4>CLIENT</h4>
+                    <p>{{item.client}}</p>
+                    <h4>Date</h4>
+                    <p>{{item.date}}</p>
+                    <h4>CATEGORY</h4>
+                    <p>{{item.category}}</p>
+            </article>
+            <div>
+                <img :src='"images/" + item.image' v-bind:alt="item.name">
+            </div>
+        </div>
     </section>
     `,
 

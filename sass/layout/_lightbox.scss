@@ -1,13 +1,16 @@
+@use "../modules" as *;
+
 .lightbox {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 1);
+    // background-color: rgba(0, 0, 0, 1);
     z-index: 5000;
 }
 
 .lightbox_close {
-    position: relative;
+    position: absolute;
+    z-index: 6000;
     top: 20px;
     left: 95%;
     cursor: pointer;
@@ -37,4 +40,33 @@
 
 .test {
     position: relative;
+}
+
+.content {
+    img {
+        @include imagefit(px(480));
+    }
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-inline: auto;
+    justify-items: normal;
+    align-items: stretch;
+
+    width: min(100% - px(40), px(1140));
+    grid-template-columns: 1fr;
+    @include breakpoint(desktop) {
+        grid-template-columns: 1fr 3fr;
+    }
+    &__copy {
+        color: white;
+        background-color: $colour-darkest;
+        h3,
+        h4,
+        p {
+            margin-left: px(20);
+        }
+        h3 {
+            margin: px(20);
+        }
+    }
 }
