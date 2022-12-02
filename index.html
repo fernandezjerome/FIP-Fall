@@ -248,69 +248,73 @@
                             <h3 id="php-copy"></h3>
                         </div>
                     </div>
-                    <form
-                        class="form__container"
-                        action="script/send.php"
-                        method="POST"
-                    >
-                        <label for="firstname"></label>
-                        <input
-                            v-model.trim="firstname"
-                            ref="firstname"
-                            type="text"
-                            id="firstname"
-                            name="firstname"
-                            required="required"
-                            placeholder="First Name"
-                        />
+                    <div>
+                        <form
+                            class="container__form"
+                            action="script/send.php"
+                            method="POST"
+                            id="mail-form"
+                            v-if="errors.length > 0"
+                        >
+                            <label for="firstname"></label>
+                            <input
+                                v-model.trim="firstname"
+                                v-on:keypress="fname($event)"
+                                ref="firstname"
+                                type="text"
+                                id="firstname"
+                                name="firstname"
+                                placeholder="First name"
+                                required="required"
+                            />
 
-                        <label for="lastname"></label>
-                        <input
-                            v-model.trim="lastname"
-                            ref="lastname"
-                            type="text"
-                            id="lastname"
-                            name="lastname"
-                            required="required"
-                            placeholder="Last Name"
-                        />
+                            <label for="lastname"></label>
+                            <input
+                                v-model.trim="lastname"
+                                v-on:keypress="lname($event)"
+                                ref="lastname"
+                                type="text"
+                                id="lastname"
+                                name="lastname"
+                                placeholder="Last name"
+                                required
+                            />
 
-                        <label for="email"></label>
-                        <input
-                            v-model.trim="email"
-                            ref="email"
-                            type="email"
-                            id="email"
-                            name="email"
-                            required="required"
-                            placeholder="Email"
-                        />
+                            <label for="email"></label>
+                            <input
+                                v-model.trim="email"
+                                ref="email"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
 
-                        <label for="message"></label>
-                        <textarea
-                            v-model.trim="msg"
-                            ref="message"
-                            name="message"
-                            id="message"
-                            cols="30"
-                            rows="6"
-                            placeholder="Your Messaage"
-                        ></textarea>
+                            <label for="message"></label>
+                            <textarea
+                                v-model.trim="msg"
+                                v-on:keypress="message($event)"
+                                ref="message"
+                                name="message"
+                                placeholder="Message"
+                                id="message"
+                                cols="30"
+                                rows="6"
+                            ></textarea>
 
-                        <!-- <label for="phone">Your Phone # <i>(optional)</i></label>
-            <input ref="phone" id="phone" type="tel" value="tel" name="phone">
-             -->
-                        <div>
-                            <div class="wrapper">
-                                <input
-                                    @click.prevent="processMail"
-                                    type="submit"
-                                    class="submit"
-                                    value="Lets Go!"
-                                />
+                            <div>
+                                <div class="wrapper">
+                                    <input
+                                        @click.prevent="processMail"
+                                        type="submit"
+                                        class="submit"
+                                        value="Submit"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
