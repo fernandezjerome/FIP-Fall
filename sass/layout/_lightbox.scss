@@ -1,5 +1,24 @@
 @use "../modules" as *;
 
+.lbcolour1 {
+    background-color: #0f4d51;
+}
+.lbcolour2 {
+    background-color: #05008b;
+}
+.lbcolour3 {
+    background-color: #465e04;
+}
+.lbcolour4 {
+    background-color: #4d4d4d;
+}
+.lbcolour5 {
+    background-color: #604a53;
+}
+.lbcolour6 {
+    background-color: #476475;
+}
+
 .lightbox {
     cursor: pointer;
     position: absolute;
@@ -37,7 +56,7 @@
     padding-top: 2em;
 }
 
-.test {
+.port-cantaier {
     position: relative;
 }
 
@@ -51,14 +70,23 @@
     justify-items: normal;
     align-items: stretch;
 
-    width: min(100% - px(40), px(1140));
+    width: min(100%, px(1140));
     grid-template-columns: 1fr;
     @include breakpoint(desktop) {
         grid-template-columns: 3fr 1fr;
     }
     &__copy {
+        display: flex;
+        flex-direction: column;
+        gap: px(10);
         color: white;
-        background-color: $colour-darkest;
+        // background-color: $colour-darkest;
+        @include breakpoint(tablet) {
+            flex-direction: row;
+        }
+        @include breakpoint(desktop) {
+            flex-direction: column;
+        }
         h3,
         h4,
         p {
@@ -67,8 +95,15 @@
         h3 {
             margin: px(20);
         }
+        h4 {
+            margin: 0 0 0 px(20);
+        }
     }
     &__image {
         background-color: black;
     }
+}
+
+.top-margin {
+    margin-top: px(20);
 }

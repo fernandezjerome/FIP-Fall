@@ -11,16 +11,31 @@
     margin-inline: auto;
     justify-items: center;
     align-items: center;
-    width: min(100%, px(1140));
+    width: min(100% - px(40), px(1140));
 
     @include breakpoint(tablet) {
         grid-template-columns: repeat(2, 1fr);
     }
     &__copy {
         p,
-        h3 {
+        h3,
+        h4 {
             color: white;
         }
+        h3 {
+            font-size: px(30);
+        }
+        h4 {
+            font-size: px(40);
+            line-height: 0;
+        }
+        p {
+            // margin-bottom: px(10);
+            font-weight: bold;
+        }
+    }
+    &__head {
+        border-bottom: 1px solid white;
     }
 }
 
@@ -67,7 +82,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 300px;
+    width: 290px;
     padding: 0.575rem 0.75rem;
     font-size: px(14);
     color: #495057;
@@ -122,8 +137,8 @@ textarea:focus {
 
 .container__form {
     margin: px(30) 0;
-    padding: px(30);
-    border-radius: px(20);
+    padding: px(30) px(20);
+    border-radius: px(5);
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 0px 1px;
 }

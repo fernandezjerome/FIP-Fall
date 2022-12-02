@@ -14,16 +14,29 @@ export default {
              
             </div>
     
-            <article class="content__copy">
-                <h3>{{item.name}}</h3>
+            <article v-bind:class="item.class" class="content__copy">
+                <div>
+                    <h3>{{item.name}}</h3>
                     <p>{{item.info}}</p>
-                    <h4>CLIENT</h4>
-                  
-                    <p>{{item.client}}</p>
-                    <h4>Date</h4>
-                    <p>{{item.date}}</p>
-                    <h4>CATEGORY</h4>
-                    <p>{{item.category}}</p>
+                </div>
+
+                <div>    
+                    <div class="top-margin">
+                        <h4>CLIENT</h4>                  
+                        <p>{{item.client}}</p>
+                    </div>
+                        
+                    <div>
+                        <h4>Date</h4>
+                        <p>{{item.date}}</p>
+                    </div>
+                    
+                    <div>
+                        <h4>CATEGORY</h4>
+                        <p>{{item.category}}</p>
+                    </div>
+                </div>
+
             </article>
         
         </div>
