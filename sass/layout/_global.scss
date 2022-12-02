@@ -1,0 +1,108 @@
+@use "../modules" as *;
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: px(12);
+    color: $colour-darkest !important;
+    font-weight: weight(bold);
+    cursor: pointer;
+    border: 0;
+    background-color: $colour-footerfont;
+    padding: px(10) px(34);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
+.btn-selected {
+    font-size: px(12);
+    color: $colour-darkest !important;
+    font-weight: weight(bold);
+    cursor: pointer;
+    border: 0;
+    background-color: $colour-main;
+    padding: px(10) px(34);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
+.btn2 {
+    font-size: px(12);
+    color: white !important;
+    font-weight: weight(bold);
+    cursor: pointer;
+    border: 0;
+    background-color: $colour-accent;
+    padding: px(5) px(20);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.095) 0px 10px 20px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px;
+}
+
+.btn2-selected {
+    font-size: px(12);
+    color: white !important;
+    font-weight: weight(bold);
+    cursor: pointer;
+    border: 0;
+    background-color: $colour-main;
+    padding: px(5) px(20);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.095) 0px 10px 20px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px;
+}
+
+.btn:hover {
+    background-color: $colour-accent;
+}
+
+.sql-btn {
+    font-size: px(13);
+    color: $colour-darkest !important;
+    font-weight: weight(bold);
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(238, 238, 238);
+    padding: px(5) px(12);
+    // border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    @include transitionEase;
+}
+.sql-btn:hover {
+    color: $colour-headerline;
+}
+
+.selected {
+    box-shadow: 0 8px 15px 0 rgba($colour-main, 0.2);
+    background-color: $colour-main;
+    color: $colour-white;
+}
+
+.bgcl1 {
+    background-color: $colour-light1;
+}
+.bgcl2 {
+    background-color: $colour-light2;
+}
+.bgpurple {
+    background-color: $colour-main;
+}
+
+.headline {
+    padding: px(30) 0;
+
+    text-align: center;
+    p {
+        color: $colour-darkest;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: px(30);
+    }
+}

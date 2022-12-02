@@ -1,0 +1,26 @@
+{
+    "first": {
+        "img": "animation1.svg",
+        "alt": "about me",
+        "product_name": "About me",
+        "product_desc": "I enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things and am meticulous about details. My background is Digital Imaging Specialist and learning Interactive Media Design at Fanshawe College. With my core skill in Digital Imaging, I have an enormous advantage when it comes to coding and video editing."
+    },
+    "second": {
+        "img": "animation2.svg",
+        "alt": "about education",
+        "product_name": "My Education",
+        "product_desc": "First, I studied at AMA University as a Computer Science. Back then, I was curious about programming. But when I started working, I started to become a Graphic Designer. During Covid-19, I decided to study again and now I'm taking Interactive Media Design at Fanshawe College in Canada."
+    },
+    "third": {
+        "img": "animation3.svg",
+        "alt": "about skills",
+        "product_name": "My Weapon Choice",
+        "product_desc": "In designing, I use Illustrator, XD and Cinema 4D first depending of the project and my final touched is Photoshop and After Effects. For the front end, I usually work with JavaScript, either standalone or including popular frameworks like GreenSock and VueJS. I'm in love with CSS when I first learn it but SASS for me is revolutionary for me."
+    },
+    "fourth": {
+        "img": "animation4.svg",
+        "alt": "about experience",
+        "product_name": "My Emplyment History",
+        "product_desc": "<span>STAR INC.</span> - GRAPHIC DESIGNER/VIDEO EDITING<br><span>DENTSU PHILIPPINES</span> - DIGITAL IMAGING ARTIST/FREELANCER<br><span>SUSHI GRAPHICS</span> -DIGITAL IMAGING ARTIST/RETOUCHER<br><span>GFX GREATIVE IMAGING</span> - DIGITAL IMAGING ARTIST/RETOUCHER<br><span>YY & CO.</span> - GRAPHIC DESIGN / WEB DESIGN <br>"
+    }
+}
