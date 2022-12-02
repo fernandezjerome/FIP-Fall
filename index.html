@@ -230,6 +230,89 @@
             </div>
 
             <!-- FORMS-->
+            <section class="form-bg">
+                <div class="forms">
+                    <h2 class="hidden">Forms</h2>
+                    <div class="forms__copy">
+                        <div>
+                            <p>Let's Connect</p>
+                            <h3>Get in Toch!</h3>
+                            <p>
+                                I'm always happy to hear about exiting
+                                opportunities and build valuable connections!
+                            </p>
+                        </div>
+                        <div id="responseContainer">
+                            <p>Hi there,</p>
+                            <p>Fill the form!</p>
+                            <h3 id="php-copy"></h3>
+                        </div>
+                    </div>
+                    <form
+                        class="form__container"
+                        action="script/send.php"
+                        method="POST"
+                    >
+                        <label for="firstname"></label>
+                        <input
+                            v-model.trim="firstname"
+                            ref="firstname"
+                            type="text"
+                            id="firstname"
+                            name="firstname"
+                            required="required"
+                            placeholder="First Name"
+                        />
+
+                        <label for="lastname"></label>
+                        <input
+                            v-model.trim="lastname"
+                            ref="lastname"
+                            type="text"
+                            id="lastname"
+                            name="lastname"
+                            required="required"
+                            placeholder="Last Name"
+                        />
+
+                        <label for="email"></label>
+                        <input
+                            v-model.trim="email"
+                            ref="email"
+                            type="email"
+                            id="email"
+                            name="email"
+                            required="required"
+                            placeholder="Email"
+                        />
+
+                        <label for="message"></label>
+                        <textarea
+                            v-model.trim="msg"
+                            ref="message"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="6"
+                            placeholder="Your Messaage"
+                        ></textarea>
+
+                        <!-- <label for="phone">Your Phone # <i>(optional)</i></label>
+            <input ref="phone" id="phone" type="tel" value="tel" name="phone">
+             -->
+                        <div>
+                            <div class="wrapper">
+                                <input
+                                    @click.prevent="processMail"
+                                    type="submit"
+                                    class="submit"
+                                    value="Lets Go!"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer">

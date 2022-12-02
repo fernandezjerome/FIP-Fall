@@ -1,4 +1,9 @@
 @use "../modules" as *;
+.form-bg {
+    padding: px(10);
+    margin-top: px(100);
+    background-color: #606060;
+}
 
 .forms {
     display: grid;
@@ -6,7 +11,13 @@
     margin-inline: auto;
     justify-items: center;
     align-items: start;
-    width: min(100%, px(1000));
+    width: min(100%, px(1140));
+    &__copy {
+        h3,
+        p {
+            color: white;
+        }
+    }
 
     @include breakpoint(tablet) {
         grid-template-columns: repeat(2, 1fr);
@@ -56,7 +67,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 300px;
+    // width: 300px;
     padding: 0.575rem 0.75rem;
     font-size: px(14);
     color: #495057;
@@ -107,12 +118,4 @@ textarea:focus {
 
 .text-green {
     color: rgb(11, 179, 11) !important;
-}
-
-.container__form {
-    margin: px(30) 0;
-    padding: px(30);
-    border-radius: px(20);
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 0px 1px;
 }
