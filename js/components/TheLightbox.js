@@ -8,7 +8,7 @@ export default {
     template: `
     <section @click="closeLB" class="lightbox">
  
-       <div class="content">
+       <div v-bind:class="item.class" class="content">
             <div class="content_image">
                 <img :src='"images/" + item.image' v-bind:alt="item.name">
              
@@ -20,7 +20,7 @@ export default {
                     <p>{{item.info}}</p>
                 </div>
 
-                <div>    
+                <div class="right-margin">    
                     <div class="top-margin">
                         <h4>CLIENT</h4>                  
                         <p>{{item.client}}</p>
