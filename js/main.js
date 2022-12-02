@@ -1,5 +1,7 @@
 import HeroThumb from "./components/TheHeroThumbnail.js";
 import LightBox from "./components/TheLightbox.js";
+import { SendMail } from "./components/mailer.js";
+
 const phpResponse = document.getElementById("php-copy");
 (() => {
     const { createApp } = Vue;
@@ -36,6 +38,38 @@ const phpResponse = document.getElementById("php-copy");
             },
             toggleShow() {
                 this.showBooks = !this.showBooks;
+            },
+            processMailFailure(result) {
+                phpResponse.classList.add("text-red");
+                let fields = JSON.parse(result.message).message;
+                phpResponse.innerHTML = "";
+                for (const message of fields) {
+                    phpResponse.innerHTML += message + "<br>";
+                }
+            },
+
+            processMailSuccess(result) {
+                phpResponse.classList.remove("text-red");
+                phpResponse.classList.add("text-green");
+                let message = ["firstname", "lastname", "email", "message"];
+                // debugger;
+
+                phpResponse.innerHTML = result.message;
+                message.forEach((field) =>
+                    this.$refs[field].classList.remove("is-notvalid")
+                );
+
+                //debugger;
+                message.forEach((field) =>
+                    this.$refs[field].classList.add("is-valid")
+                );
+            },
+
+            processMail(event) {
+                // use the SendMail component to process mail
+                SendMail(this.$el.parentNode)
+                    .then((data) => this.processMailSuccess(data))
+                    .catch((err) => this.processMailFailure(err));
             },
         },
     }).mount("#app");
