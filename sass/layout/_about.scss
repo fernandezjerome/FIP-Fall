@@ -10,13 +10,23 @@
         line-height: px(50);
     }
     span {
-        color: $colour-main;
+        font-weight: bold;
     }
 
     &__height {
         // height: 400px;
         @include breakpoint(tablet) {
             // height: 400px;
+        }
+    }
+
+    .sql__content {
+        height: 200px;
+        @include breakpoint(tablet) {
+            height: 200px;
+        }
+        @include breakpoint(desktop) {
+            height: 130px;
         }
     }
 
@@ -101,9 +111,7 @@
         p {
             font-size: px(15);
         }
-        button {
-            // margin-top: px(20);
-        }
+
         h3 {
             margin-top: px(80);
             font-size: px(14);

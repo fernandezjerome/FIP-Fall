@@ -62,14 +62,19 @@
 
 .content {
     img {
-        @include imagefit(px(660));
+        @include imagefit(px(460));
+        @include breakpoint(tablet) {
+            @include imagefit(px(630));
+        }
+        @include breakpoint(desktop) {
+            @include imagefit(px(645));
+        }
     }
     display: grid;
     grid-template-rows: auto auto;
     margin-inline: auto;
     justify-items: normal;
     align-items: stretch;
-
     width: min(100%, px(1140));
     grid-template-columns: 1fr;
     @include breakpoint(desktop) {
@@ -115,5 +120,8 @@
 }
 .right-margin {
     margin-right: px(20);
-    margin-bottom: px(20);
+    margin-bottom: px(238);
+    @include breakpoint(tablet) {
+        margin-bottom: px(20);
+    }
 }

@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
+        <h1 class="hidden">Jerome Portfolio</h1>
         <header class="header head-colour">
             <nav id="sidenav">
                 <a href="#">About Me</a>
@@ -40,12 +41,12 @@
                     <div></div>
                 </a>
                 <!-- grid 3 -->
-                <li class="header__links">
+                <div class="header__links">
                     <a href="#">About Me</a>
                     <a href="#services">Services</a>
                     <a href="#app">Portfolio</a>
                     <a href="#contact">Contact Me </a>
-                </li>
+                </div>
                 <!-- grid 4 -->
                 <div class="header__social">
                     <!-- <h3>sdlkfjlsadkj</h3> -->
@@ -57,7 +58,6 @@
         </header>
 
         <main>
-            <h1 class="hidden">Jerome Fernandez Portfolio</h1>
             <!-- about -->
             <section class="about">
                 <div class="about__grid">
@@ -97,14 +97,22 @@
                                             Experience
                                         </button>
                                     </div>
+
                                     <div class="sql__content">
-                                        <h4>Intro om myself</h4>
+                                        <h3 class="hidden">My information</h3>
+                                        <h4>About me</h4>
                                         <p>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Iste,
-                                            illo! Voluptatibus vel ut distinctio
-                                            dolore eum maxime quam fuga
-                                            repellat!
+                                            I enjoy solving problems as well as
+                                            making things pretty and easy to
+                                            use. I can't stop learning new
+                                            things and am meticulous about
+                                            details. My background is Digital
+                                            Imaging Specialist and learning
+                                            Interactive Media Design at Fanshawe
+                                            College. With my core skill in
+                                            Digital Imaging, I have an enormous
+                                            advantage when it comes to coding
+                                            and video editing.
                                         </p>
                                     </div>
                                 </div>
@@ -132,6 +140,7 @@
 
             <!-- Services -->
             <section class="services">
+                <h2 class="hidden">My services</h2>
                 <div class="services__container">
                     <div class="services__box">
                         <img
@@ -166,15 +175,15 @@
             </section>
 
             <!-- Demo -->
-            <section class="headline bgcl1" id="demo">
-                <p>Services</p>
-                <h2>My Awesome Services</h2>
+            <section class="headline bgcl2" id="demo">
+                <p>Demo</p>
+                <h2>Demo Reel</h2>
             </section>
 
             <!-- video -->
             <section class="playVid">
                 <div id="video" class="video-control">
-                    <video src="videos/house.mp4" controls></video>
+                    <video src="Videos/demo-reel.mp4" controls></video>
                 </div>
 
                 <div id="controls">
@@ -339,6 +348,7 @@
                 </nav>
             </div>
         </footer>
+        <script src="js/video.js"></script>
         <script src="js/sql.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/main.js" type="module" defer></script>

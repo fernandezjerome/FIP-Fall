@@ -38,7 +38,7 @@
         h3 {
             font-size: px(20);
             margin: 0 px(20);
-            color: $colour-darkest;
+            color: $colour-darkgray;
         }
         p {
             color: $colour-darkest;
@@ -51,7 +51,7 @@
             rgba(56, 50, 50, 0.1) 0px 0px 1px;
         @include transitionEase;
         h3 {
-            color: $colour-main;
+            color: $colour-darkest;
         }
     }
 }
