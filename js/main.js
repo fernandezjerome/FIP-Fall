@@ -3,6 +3,7 @@ import LightBox from "./components/TheLightbox.js";
 import { SendMail } from "./components/mailer.js";
 
 const phpResponse = document.getElementById("php-copy");
+
 (() => {
     const { createApp } = Vue;
 
@@ -39,6 +40,20 @@ const phpResponse = document.getElementById("php-copy");
             toggleShow() {
                 this.showBooks = !this.showBooks;
             },
+        },
+    }).mount("#app");
+})();
+
+(() => {
+    const { createApp } = Vue;
+
+    createApp({
+        data() {
+            return {
+                firstname: "",
+            };
+        },
+        methods: {
             processMailFailure(result) {
                 phpResponse.classList.add("text-red");
                 let fields = JSON.parse(result.message).message;
@@ -72,5 +87,5 @@ const phpResponse = document.getElementById("php-copy");
                     .catch((err) => this.processMailFailure(err));
             },
         },
-    }).mount("#app");
+    }).mount("#mail-form");
 })();
