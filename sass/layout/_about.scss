@@ -72,10 +72,10 @@
     &__profile {
         position: relative;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
         img {
-            height: 350px;
+            @include imagefit(px(320));
         }
     }
     &__skills {
@@ -130,4 +130,11 @@
 
 .rooms {
     background-color: red;
+}
+
+.info__img {
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }

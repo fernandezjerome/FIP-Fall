@@ -1,5 +1,9 @@
 @use "../modules" as *;
 
+#services {
+    border-top: 1px solid $colour-headerline;
+}
+
 .services {
     padding: px(20) 0;
     background-color: $colour-light1;
@@ -29,7 +33,7 @@
         background-color: white;
         @include breakpoint(tablet) {
             margin: 0;
-            height: px(280);
+            height: px(240);
         }
 
         img {
