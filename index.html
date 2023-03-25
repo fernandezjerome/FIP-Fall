@@ -24,9 +24,9 @@
         <header class="header head-colour">
             <nav id="sidenav">
                 <a href="#">About Me</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact Me</a>
+                <a href="#services">Services</a>
+                <a href="#app">Portfolio</a>
+                <a href="#contact">Contact Me</a>
             </nav>
 
             <nav class="header__nav">
@@ -278,7 +278,6 @@
                         >
                             <label for="firstname">First Name</label>
                             <input
-                                v-model.trim="firstname"
                                 ref="firstname"
                                 type="text"
                                 id="firstname"
@@ -288,7 +287,6 @@
 
                             <label for="lastname">Last Name</label>
                             <input
-                                v-model.trim="lastname"
                                 ref="lastname"
                                 type="text"
                                 id="lastname"
@@ -298,7 +296,6 @@
 
                             <label for="email">Email</label>
                             <input
-                                v-model.trim="email"
                                 ref="email"
                                 type="email"
                                 id="email"
@@ -308,7 +305,6 @@
 
                             <label for="message">Your Message</label>
                             <textarea
-                                v-model.trim="msg"
                                 ref="message"
                                 name="message"
                                 id="message"
@@ -353,6 +349,7 @@
             </div>
         </footer>
         <script src="js/video.js"></script>
+        <script src="js/nav.js"></script>
         <script src="js/sql.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/main.js" type="module" defer></script>

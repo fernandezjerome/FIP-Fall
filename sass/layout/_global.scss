@@ -79,9 +79,9 @@
 }
 
 .selected {
-    box-shadow: 0 8px 15px 0 rgba($colour-main, 0.2);
-    background-color: $colour-main;
-    color: $colour-white;
+    box-shadow: 0 8px 15px 0 rgba($colour-gray, 0.2);
+    background-color: $colour-gray;
+    color: $colour-white !important;
 }
 
 .bgcl1 {

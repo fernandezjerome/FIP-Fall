@@ -26,12 +26,13 @@
         display: grid;
         margin-inline: auto;
         align-items: center;
-        grid-template-columns: 0.1fr 2fr 0.1fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
         grid-template-rows: auto auto;
         justify-items: center;
         width: min(100%, px(1140));
         // width: min(100% - px(20), px(1000));
         padding: px(24);
+        // padding: px(15) 0;
 
         @include breakpoint(desktop) {
             grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -164,17 +165,17 @@
     align-items: center;
     justify-content: center;
     top: px(81);
-    left: -40vh;
-    height: 60vh;
-    width: 40vh;
+    // left: -100vh;
+    height: 36vh;
+    width: 50vh;
     overflow: hidden;
-    background-color: $colour-main;
+    background-color: $colour-darkest;
     padding-right: px(16);
     a {
         color: $colour-whitegray;
         padding: px(10);
         &:not(:last-child) {
-            margin-bottom: px(40);
+            margin-bottom: px(10);
         }
         &::after {
             content: "";
@@ -198,5 +199,5 @@
     }
 }
 .nav-slide {
-    transform: translate(40vh);
+    transform: translate(100vh);
 }

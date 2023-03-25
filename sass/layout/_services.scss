@@ -18,7 +18,7 @@
         justify-items: normal;
         align-items: start;
         gap: px(20);
-        width: min(100% - px(40), px(1000));
+        width: min(100% - px(40), px(1140));
         grid-template-columns: repeat(1, 1fr);
         @include breakpoint(tablet) {
             grid-template-columns: repeat(3, 1fr);
