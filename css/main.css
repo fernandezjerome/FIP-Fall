@@ -987,3 +987,50 @@ textarea:focus {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 0px 1px;
 }
+
+.case {
+  display: flex;
+  max-width: 1160px;
+  margin-inline: auto;
+  justify-items: center;
+}
+.case__panel {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  /* border-radius: 50px; */
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.5s ease-in;
+  color: #fff;
+  margin: 10px;
+}
+.case__panel h3 {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  opacity: 0;
+}
+.case__panel a {
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  border-radius: 0.1875rem;
+  background-color: #546378;
+  padding: 0.3125rem 1.25rem;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  opacity: 0;
+}
+.case .active {
+  flex: 2;
+}
+.case .active h3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}
+.case .active a {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.4s;
+}

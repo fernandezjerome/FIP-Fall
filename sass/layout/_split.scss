@@ -1,0 +1,50 @@
+@use "../modules" as *;
+
+.case {
+    display: flex;
+    max-width: 1160px;
+    margin-inline: auto;
+    justify-items: center;
+    &__panel {
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        /* border-radius: 50px; */
+        flex: 0.5;
+        position: relative;
+        transition: flex 0.5s ease-in;
+        color: #fff;
+        // cursor: pointer;
+        margin: 10px;
+        h3 {
+            position: absolute;
+            bottom: 70px;
+            left: 20px;
+            opacity: 0;
+        }
+        a {
+            color: white;
+            font-size: px(15);
+            font-weight: 700;
+            border-radius: px(3);
+            background-color: #546378;
+            padding: px(5) px(20);
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            opacity: 0;
+        }
+    }
+
+    .active {
+        flex: 2;
+        h3 {
+            opacity: 1;
+            transition: opacity 0.4s ease-in 0.4s;
+        }
+        a {
+            opacity: 1;
+            transition: opacity 0.4s ease-in 0.4s;
+        }
+    }
+}
