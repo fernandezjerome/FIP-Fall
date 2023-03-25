@@ -26,7 +26,7 @@
         display: grid;
         margin-inline: auto;
         align-items: center;
-        grid-template-columns: 0.1fr 2fr 0.1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         justify-items: center;
         width: min(100%, px(1140));
@@ -57,6 +57,23 @@
         i:hover {
             @include transitionEase;
             color: $colour-gray;
+        }
+    }
+    &__download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    &__cv {
+        a {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: px(3);
+            font-size: px(11);
+        }
+        a:hover {
+            background-color: rgb(243, 243, 243);
         }
     }
 

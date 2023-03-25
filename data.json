@@ -3,24 +3,24 @@
         "img": "animation1.svg",
         "alt": "about me",
         "product_name": "About me",
-        "product_desc": "I enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things and am meticulous about details. My background is Digital Imaging Specialist and learning Interactive Media Design at Fanshawe College. With my core skill in Digital Imaging, I have an enormous advantage when it comes to coding and video editing."
+        "product_desc": "I am a passionate and driven Graphic Designer and Print/Electronic Production specialist with over 10 years of experience creating visually stunning and engaging designs. Currently, I am a student at Fanshawe College in London, Ontario, pursuing my passion for Interactive Media Design. I am expected to complete my program and graduate in  April 2023."
     },
     "second": {
         "img": "animation2.svg",
         "alt": "about education",
         "product_name": "My Education",
-        "product_desc": "First, I studied at AMA University as a Computer Science. Back then, I was curious about programming. But when I started working, I started to become a Graphic Designer. During Covid-19, I decided to study again and now I'm taking Interactive Media Design at Fanshawe College in Canada."
+        "product_desc": "After completing my studies in Computer Science at AMA University, I initially pursued a career in programming. However, as I started working, I discovered my passion for Graphic Design and began developing my skills in this field. In response to the Covid-19 pandemic and the resulting disruptions, I made the decision to return to academic studies. I am currently enrolled in the Interactive Media Design program at Fanshawe College in Canada, where I am honing my skills and knowledge to further advance my career in the design industry."
     },
     "third": {
         "img": "animation3.svg",
         "alt": "about skills",
         "product_name": "My Weapon Choice",
-        "product_desc": "In designing, I use Illustrator, XD and Cinema 4D first depending of the project and my final touched is Photoshop and After Effects. For the front end, I usually work with JavaScript, either standalone or including popular frameworks like GreenSock and VueJS. I'm in love with CSS when I first learn it but SASS for me is revolutionary for me."
+        "product_desc": "In my design process, I employ various software tools such as Illustrator, XD, and Cinema 4D, depending on the project requirements. I leverage my expertise in Photoshop and After Effects to add the finishing touches to my designs. In terms of front-end development, I have extensive experience with JavaScript, both as a standalone language and as a component of popular frameworks such as GreenSock and VueJS. While I was initially drawn to CSS, I find that SASS has revolutionized my development process and has become an essential tool in my skill set."
     },
     "fourth": {
         "img": "animation4.svg",
         "alt": "about experience",
         "product_name": "My Emplyment History",
-        "product_desc": "<span>STAR INC.</span> - GRAPHIC DESIGNER/VIDEO EDITING<br><span>DENTSU PHILIPPINES</span> - DIGITAL IMAGING ARTIST/FREELANCER<br><span>SUSHI GRAPHICS</span> -DIGITAL IMAGING ARTIST/RETOUCHER<br><span>GFX GREATIVE IMAGING</span> - DIGITAL IMAGING ARTIST/RETOUCHER<br><span>YY & CO.</span> - GRAPHIC DESIGN / WEB DESIGN <br>"
+        "product_desc": "<span>STAR INC.</span> - GRAPHIC DESIGNER/VIDEO EDITING<br><span>DENTSU PHILIPPINES</span> - DIGITAL IMAGING ARTIST/FREELANCER<br><span>SUSHI GRAPHICS</span> -DIGITAL IMAGING ARTIST/RETOUCHER<br>"
     }
 }

@@ -17,7 +17,9 @@
     }
 
     &__logo {
-        width: px(40);
+        display: flex;
+        gap: px(10);
+        flex-direction: column;
     }
 
     &__social {
