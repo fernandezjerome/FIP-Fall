@@ -24,9 +24,9 @@
         <header class="header head-colour">
             <nav id="sidenav">
                 <a href="#">About Me</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact Me</a>
+                <a href="#services">Services</a>
+                <a href="#app">Portfolio</a>
+                <a href="#contact">Contact Me</a>
             </nav>
 
             <nav class="header__nav">
@@ -181,39 +181,50 @@
             </section>
 
             <!-- video -->
-            <section class="playVid">
-                <div id="video" class="video-control">
-                    <video src="Videos/demo-reel.mp4" controls></video>
-                </div>
-
-                <div id="controls">
-                    <div id="play">
-                        <img src="images/video-play.svg" alt="play icon" />
-                    </div>
-                    <div id="pause">
-                        <img src="images/video-pause.svg" alt="pause icon" />
-                    </div>
-                    <div id="restart">
-                        <img src="images/video-reset.svg" alt="reset icon" />
-                    </div>
-                    <div>
-                        <img src="images/video-volume.svg" alt="volume icon" />
+            <section class="bgcl2">
+                <div class="playVid">
+                    <div id="video" class="video-control">
+                        <video src="Videos/demo-reel.mp4" controls></video>
                     </div>
 
-                    <div id="volumeControl">
-                        <input
-                            type="range"
-                            min="0"
-                            max="100"
-                            value="50"
-                            id="volumeSlider"
-                        />
+                    <div id="controls">
+                        <div id="play">
+                            <img src="images/video-play.svg" alt="play icon" />
+                        </div>
+                        <div id="pause">
+                            <img
+                                src="images/video-pause.svg"
+                                alt="pause icon"
+                            />
+                        </div>
+                        <div id="restart">
+                            <img
+                                src="images/video-reset.svg"
+                                alt="reset icon"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="images/video-volume.svg"
+                                alt="volume icon"
+                            />
+                        </div>
+
+                        <div id="volumeControl">
+                            <input
+                                type="range"
+                                min="0"
+                                max="100"
+                                value="50"
+                                id="volumeSlider"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Portfolio -->
-            <div id="app">
+            <div id="app" class="bgcl2">
                 <section class="headline bgcl2">
                     <p>Portfolio</p>
                     <h2>My Previous Works</h2>
@@ -239,7 +250,7 @@
             </div>
 
             <!-- FORMS-->
-            <section class="form-bg" id="contact app">
+            <section class="form-bg" id="contact">
                 <div class="forms">
                     <h2 class="hidden">Forms</h2>
                     <div class="forms__copy">
@@ -262,7 +273,7 @@
                             class="container__form"
                             action="scripts/send.php"
                             method="POST"
-                            id="app"
+                            id="mail-form"
                             v-if="errors.length > 0"
                         >
                             <label for="firstname">First Name</label>
@@ -342,6 +353,7 @@
             </div>
         </footer>
         <script src="js/video.js"></script>
+        <script src="js/nav.js"></script>
         <script src="js/sql.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="js/main.js" type="module" defer></script>
