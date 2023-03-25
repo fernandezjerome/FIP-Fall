@@ -1,0 +1,64 @@
+@use "../modules" as *;
+
+.portfolio {
+    overflow: hidden;
+
+    cursor: pointer;
+    img {
+        // transition: transform 0.5s cubic-bezier(0.7, -0.39, 0.31, 1.38);
+        @include imagefit(px(160));
+        @include breakpoint(tablet) {
+            @include imagefit(px(180));
+        }
+        @include breakpoint(desktop) {
+            @include imagefit(px(200));
+        }
+    }
+    ul {
+        list-style-type: none;
+    }
+    @include transitionEase;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-inline: auto;
+    justify-items: normal;
+    align-items: start;
+    // gap: px(20);
+    width: min(100%, px(1140));
+    grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: px(20);
+    }
+    @include breakpoint(desktop) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__container {
+        position: relative;
+    }
+
+    &__copy {
+        // opacity: 0;
+        // display: none;
+        // padding: px(5) px(30);
+        // bottom: 3px;
+        // background-color: rgb(206, 206, 206);
+        // position: absolute;
+        @include breakpoint(tablet) {
+            display: block;
+        }
+        h3 {
+            font-size: px(16);
+            color: $colour-darkest;
+        }
+        p {
+            color: $colour-darkest;
+            font-size: px(14);
+        }
+    }
+    // &__copy:hover {
+    //     opacity: 1;
+    // }
+}

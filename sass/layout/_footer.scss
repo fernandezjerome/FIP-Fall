@@ -1,0 +1,57 @@
+@use "../modules" as *;
+
+.footer {
+    padding: px(10) 0;
+    li {
+        list-style: none;
+    }
+    background-color: $colour-darkest;
+    &__nav {
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1140));
+    }
+
+    &__logo {
+        width: px(40);
+    }
+
+    &__social {
+        display: flex;
+        gap: px(10);
+        font-size: 20px;
+        i {
+            @include transitionEase;
+            color: $colour-accent;
+        }
+        i:hover {
+            @include transitionEase;
+            color: $colour-gray;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: px(5);
+        @include breakpoint(tablet) {
+            grid-area: px(20);
+            flex-direction: row;
+        }
+        a {
+            font-size: px(14);
+            color: rgb(175, 175, 175);
+            &:not(:last-child) {
+                margin-right: px(20);
+            }
+        }
+        a:hover {
+            @include transitionEase;
+
+            color: rgb(95, 95, 95);
+        }
+    }
+}
