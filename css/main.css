@@ -1034,3 +1034,104 @@ textarea:focus {
   opacity: 1;
   transition: opacity 0.4s ease-in 0.4s;
 }
+
+.bully {
+  color: #136274;
+  background-color: #d7e7dd;
+}
+
+.elin {
+  color: #4e2c2a;
+  background-color: #f2ecdc;
+}
+
+.bully img,
+.elin img {
+  width: 100%;
+  height: auto;
+}
+.bully h2,
+.elin h2 {
+  margin: 1.875rem 0 1.875rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+@media (min-width: 43.75em) {
+  .bully h2,
+  .elin h2 {
+    font-size: 2.8125rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .bully h2,
+  .elin h2 {
+    font-size: 3.125rem;
+  }
+}
+.bully h3,
+.elin h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+@media (min-width: 43.75em) {
+  .bully h3,
+  .elin h3 {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .bully h3,
+  .elin h3 {
+    font-size: 1.5625rem;
+  }
+}
+.bully p,
+.elin p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+@media (min-width: 43.75em) {
+  .bully p,
+  .elin p {
+    font-size: 0.9375rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .bully p,
+  .elin p {
+    font-size: 1rem;
+  }
+}
+
+.bully__grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-inline: auto;
+  justify-items: normal;
+  align-items: start;
+  gap: 1.25rem;
+  width: min(100% - 2.5rem, 71.25rem);
+  grid-template-columns: repeat(1fr, 1fr);
+}
+.bully__app {
+  margin-top: 1.875rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-inline: auto;
+  justify-items: normal;
+  align-items: start;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 43.75em) {
+  .bully__app {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.bully__app img {
+  width: 100%;
+}
+.bully__app-img {
+  display: flex;
+}

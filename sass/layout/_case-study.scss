@@ -1,0 +1,81 @@
+@use "../modules" as *;
+.bully {
+    color: #136274;
+    background-color: #d7e7dd;
+}
+.elin {
+    color: #4e2c2a;
+    background-color: #f2ecdc;
+}
+
+.bully,
+.elin {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h2 {
+        margin: px(30) 0 px(30);
+        font-size: px(40);
+        font-weight: bold;
+        @include breakpoint(tablet) {
+            font-size: px(45);
+        }
+        @include breakpoint(desktop) {
+            font-size: px(50);
+        }
+    }
+    h3 {
+        font-size: px(20);
+        font-weight: bold;
+        @include breakpoint(tablet) {
+            font-size: px(22);
+        }
+        @include breakpoint(desktop) {
+            font-size: px(25);
+        }
+    }
+    p {
+        font-size: px(14);
+        font-weight: 500;
+        line-height: px(20);
+        @include breakpoint(tablet) {
+            font-size: px(15);
+        }
+        @include breakpoint(desktop) {
+            font-size: px(16);
+        }
+    }
+}
+
+.bully {
+    &__grid {
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-inline: auto;
+        justify-items: normal;
+        align-items: start;
+        gap: px(20);
+        width: min(100% - px(40), px(1140));
+        grid-template-columns: repeat(1fr, 1fr);
+    }
+    &__app {
+        margin-top: px(30);
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-inline: auto;
+        justify-items: normal;
+        align-items: start;
+        gap: px(20);
+        grid-template-columns: 1fr;
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 2fr;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__app-img {
+        display: flex;
+    }
+}
