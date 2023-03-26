@@ -1135,3 +1135,76 @@ textarea:focus {
 .bully__app-img {
   display: flex;
 }
+.bully__ads {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-inline: auto;
+  justify-items: normal;
+  align-items: start;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+.bully__ads p {
+  margin: 1.25rem 0 1.875rem;
+}
+@media (min-width: 43.75em) {
+  .bully__ads {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.vid {
+  background-color: white;
+  color: hsl(0, 0%, 100%);
+}
+.vid h3 {
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+}
+.vid p {
+  font-size: 1.125rem;
+  margin: 1.875rem 0;
+}
+.vid video {
+  width: 100%;
+  height: 3 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 43.75em) {
+  .vid video {
+    height: 410px;
+  }
+}
+@media (min-width: 56.25em) {
+  .vid video {
+    height: 460px;
+  }
+}
+.vid__grid {
+  background-color: #028c95;
+  display: grid;
+  margin-inline: auto;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  width: min(100%, 71.25rem);
+}
+@media (min-width: 43.75em) {
+  .vid__grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.vid__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.vid__controls img {
+  height: 1.25rem;
+}
+.vid__content {
+  margin: 1.25rem;
+}
