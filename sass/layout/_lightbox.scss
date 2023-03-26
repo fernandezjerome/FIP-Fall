@@ -67,9 +67,10 @@
             @include imagefit(px(630));
         }
         @include breakpoint(desktop) {
-            @include imagefit(px(645));
+            @include imagefit(px(760));
         }
     }
+    // height: 760px;
     display: grid;
     grid-template-rows: auto auto;
     margin-inline: auto;

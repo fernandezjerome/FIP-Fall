@@ -57,7 +57,6 @@
         align-items: start;
         gap: px(20);
         width: min(100% - px(40), px(1140));
-        grid-template-columns: repeat(1fr, 1fr);
     }
     &__app {
         margin-top: px(30);
@@ -97,6 +96,7 @@
 }
 
 .vid {
+    margin-bottom: px(30);
     background-color: white;
     color: $colour-white;
     h3 {
@@ -143,4 +143,68 @@
     &__content {
         margin: px(20);
     }
+}
+
+.elin {
+    &__grid {
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-inline: auto;
+        justify-items: normal;
+        align-items: start;
+        gap: px(20);
+        width: min(100% - px(40), px(1140));
+    }
+    &__colour {
+        display: grid;
+        margin-inline: auto;
+        align-items: end;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        gap: px(20);
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__logo {
+        margin-top: px(50);
+        display: grid;
+        align-items: end;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        grid-template-rows: auto auto;
+        gap: px(20);
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+        p {
+            margin: px(20) 0;
+        }
+    }
+    &__social {
+        margin-top: px(50);
+        display: grid;
+        align-items: start;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        grid-template-rows: auto auto;
+        gap: px(20);
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+        h3 {
+            margin-bottom: px(40);
+        }
+    }
+
+    &__vid {
+        margin-bottom: px(20);
+    }
+}
+.brown {
+    background-color: #4c2f2e !important;
+}
+.brown2 {
+    color: #4c2f2e !important;
 }

@@ -382,9 +382,9 @@ html {
 }
 
 .selected {
-  box-shadow: 0 8px 15px 0 rgba(255, 200, 10, 0.2);
-  background-color: #ffc80a;
-  color: hsl(0, 0%, 100%);
+  box-shadow: 0 8px 15px 0 rgba(84, 99, 120, 0.2);
+  background-color: #546378;
+  color: white !important;
 }
 
 .bgcl1 {
@@ -797,7 +797,7 @@ html {
 @media (min-width: 56.25em) {
   .content img {
     width: 100%;
-    height: 40.3125rem;
+    height: 47.5rem;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1003,6 +1003,7 @@ textarea:focus {
   position: relative;
   transition: flex 0.5s ease-in;
   color: #fff;
+  cursor: pointer;
   margin: 10px;
 }
 .case__panel h3 {
@@ -1112,7 +1113,6 @@ textarea:focus {
   align-items: start;
   gap: 1.25rem;
   width: min(100% - 2.5rem, 71.25rem);
-  grid-template-columns: repeat(1fr, 1fr);
 }
 .bully__app {
   margin-top: 1.875rem;
@@ -1154,6 +1154,7 @@ textarea:focus {
 }
 
 .vid {
+  margin-bottom: 1.875rem;
   background-color: white;
   color: hsl(0, 0%, 100%);
 }
@@ -1207,4 +1208,73 @@ textarea:focus {
 }
 .vid__content {
   margin: 1.25rem;
+}
+
+.elin__grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-inline: auto;
+  justify-items: normal;
+  align-items: start;
+  gap: 1.25rem;
+  width: min(100% - 2.5rem, 71.25rem);
+}
+.elin__colour {
+  display: grid;
+  margin-inline: auto;
+  align-items: end;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 1.25rem;
+}
+@media (min-width: 43.75em) {
+  .elin__colour {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.elin__logo {
+  margin-top: 3.125rem;
+  display: grid;
+  align-items: end;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+}
+@media (min-width: 43.75em) {
+  .elin__logo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.elin__logo p {
+  margin: 1.25rem 0;
+}
+.elin__social {
+  margin-top: 3.125rem;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+}
+@media (min-width: 43.75em) {
+  .elin__social {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.elin__social h3 {
+  margin-bottom: 2.5rem;
+}
+.elin__vid {
+  margin-bottom: 1.25rem;
+}
+
+.brown {
+  background-color: #4c2f2e !important;
+}
+
+.brown2 {
+  color: #4c2f2e !important;
 }
